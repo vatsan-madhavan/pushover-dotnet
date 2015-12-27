@@ -4,8 +4,11 @@ namespace Pushover
 {
     public enum MessagePriority
     {
+        Lowest,
+        Low,
         Normal,
-        High
+        High,
+        Emergency
     }
 
     public interface IPushoverMessage
@@ -18,5 +21,7 @@ namespace Pushover
         string UrlTitle { get; }
         MessagePriority Priority { get; }
         DateTime? Timestamp { get; }
+        int Retry { get; }
+        int Expiration { get; }
     }
 }
