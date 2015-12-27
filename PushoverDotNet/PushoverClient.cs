@@ -3,9 +3,9 @@ using System.IO;
 using System.Net;
 using System.Text;
 using System.Xml;
-using Pushover.Extensions;
+using PushoverDotNet.Extensions;
 
-namespace Pushover
+namespace PushoverDotNet
 {
     public class PushoverClient
     {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Pushover
+namespace PushoverDotNet
 {
     public enum MessagePriority
     {
