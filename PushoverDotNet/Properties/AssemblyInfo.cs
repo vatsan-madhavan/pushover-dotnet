@@ -7,9 +7,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("PushoverDotNet")]
 [assembly: AssemblyDescription(".NET Wrapper around Pushover.net. Forked from https://github.com/mattmelling/pushover-dotnet")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("mattmelling, naerten")]
 [assembly: AssemblyProduct("PushoverDotNet")]
-[assembly: AssemblyCopyright("mattmelling")]
+[assembly: AssemblyCopyright("")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

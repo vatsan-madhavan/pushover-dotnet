@@ -52,7 +52,7 @@
     <Compile Include="PushoverClient.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="PushoverDotNet.csproj.nuspec" />
+    <None Include="PushoverDotNet.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

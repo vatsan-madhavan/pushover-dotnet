@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>PushoverDotNet</id>
-    <version>0.1.0</version>
-    <authors>Naerten</authors>
-    <owners>Naerten</owners>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
     <projectUrl>https://github.com/nielsmaerten/pushover-dotnet</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>.NET Wrapper around Pushover.net</description>
-    <copyright>Niels Maerten 2015</copyright>
+    <description>$description$</description>
     <tags>pushover</tags>
   </metadata>
 </package>
