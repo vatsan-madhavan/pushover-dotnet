@@ -7,9 +7,8 @@
     <owners>Naerten</owners>
     <projectUrl>https://github.com/nielsmaerten/pushover-dotnet</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>.NET Wrapper around Pushover.net.</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <description>.NET Wrapper around Pushover.net</description>
     <copyright>Niels Maerten 2015</copyright>
-    <tags>pushover nlog</tags>
+    <tags>pushover</tags>
   </metadata>
 </package>
