@@ -8,8 +8,8 @@
     <ProjectGuid>{50BC8791-2BDB-4064-BD75-C46A3A6A8A71}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Pushover</RootNamespace>
-    <AssemblyName>Pushover</AssemblyName>
+    <RootNamespace>PushoverDotNet</RootNamespace>
+    <AssemblyName>PushoverDotNet</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -47,6 +47,9 @@
     <Compile Include="PushoverMessageBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PushoverClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="PushoverDotNet.csproj.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

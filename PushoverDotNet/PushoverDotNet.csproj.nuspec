@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>PushoverDotNet</id>
+    <version>0.1.0</version>
+    <authors>Naerten</authors>
+    <owners>Naerten</owners>
+    <projectUrl>https://github.com/nielsmaerten/pushover-dotnet</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET Wrapper around Pushover.net.</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Niels Maerten 2015</copyright>
+    <tags>pushover nlog</tags>
+  </metadata>
+</package>
