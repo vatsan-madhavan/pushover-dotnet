@@ -66,8 +66,8 @@ namespace Pushover
         /// <param name="message">The message to push</param>
         public void Push(IPushoverMessage message)
         {
-            if(message == null) throw new ArgumentNullException("message");
-            if(String.IsNullOrEmpty(message.User)) throw new ArgumentException("message.User");
+            if(message == null) throw new ArgumentNullException(nameof(message));
+            if(String.IsNullOrEmpty(message.User)) throw new ArgumentException(nameof(message.User));
 
             var values = message.GetRequestValues();
             values.Add("token", _apiKey);
