@@ -3,7 +3,7 @@ pushover-dotnet
 
 .NET Wrapper around [Pushover.net](http://www.pushover.net).
 
-##Quick start##
+## Quick start
 
 Get an [API key](https://pushover.net/apps/build).
 
@@ -14,7 +14,7 @@ Get an [API key](https://pushover.net/apps/build).
         Message = "Hello from Pushover!"
     });
 
-##Errors##
+## Errors
 
     try 
     {
@@ -35,7 +35,7 @@ Get an [API key](https://pushover.net/apps/build).
         Logger.Error(pe.Message);
     }
 
-##Additional message properties##
+## Additional message properties
 
     var client = new PushoverClient("api-key");
     client.Push(new PushoverMessageBase
@@ -46,5 +46,27 @@ Get an [API key](https://pushover.net/apps/build).
         Url = "http://pushover.net",
         UrlTitle = "Pushover",
         Priority = MessagePriority.High,
-        Timestamp = DateTime.Now
+        Timestamp = DateTime.Now,
+        Expiration = 3600, //seconds - for Emergency priority
+        Retry = 30 //seconds - for Emergency priority
     });
+    
+## Nlog Target
+Add a Pushover Target to your LoggingConfiguration. (Or use nlog.config syntax)
+
+    var logConfig = new LoggingConfiguration();
+    var target = new PushoverTarget()
+    {
+        AppToken = "YOUR PUSHOVER APP TOKEN. ref: https://pushover.net ",
+        UserOrGroupKey = "YOUR PUSHOVER USER KEY. ref: https://pushover.net "
+    };
+    logConfig.AddTarget(target);
+    logConfig.LoggingRules.Add(new LoggingRule("*",LogLevel.Error, target));
+    LogManager.Configuration = logConfig;
+    LogManager.ReconfigExistingLoggers();
+    logger = LogManager.GetCurrentClassLogger();
+    
+Now, logs with ERROR or FATAL levels will be sent to your Pushover account:
+
+    logger.Error("Error test");
+    logger.Fatal("Fatal test");
