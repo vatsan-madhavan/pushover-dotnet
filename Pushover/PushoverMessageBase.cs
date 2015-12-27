@@ -17,6 +17,8 @@ namespace Pushover
         public virtual string UrlTitle { get; set; }
         public virtual MessagePriority Priority { get; set; }
         public virtual DateTime? Timestamp { get; set; }
+        public virtual int Retry { get; set; }
+        public virtual int Expiration { get; set; }
 
         #endregion
     }
