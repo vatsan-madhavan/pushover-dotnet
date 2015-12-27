@@ -24,7 +24,7 @@ namespace Nlog_Target
         public string ApiBase { get; set; }
 
         [RequiredParameter]
-        public string Token { get; set; }
+        public string AppToken { get; set; }
 
         [RequiredParameter]
         public string UserOrGroupKey { get; set; }
@@ -41,7 +41,7 @@ namespace Nlog_Target
 
         protected override void Write(LogEventInfo logEvent)
         {
-            Pushover.PushoverClient client = new PushoverClient(Token);
+            Pushover.PushoverClient client = new PushoverClient(AppToken);
             PushoverMessageBase message = new PushoverMessageBase()
             {
                 Device = Device,
