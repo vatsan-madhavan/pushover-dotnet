@@ -7,6 +7,7 @@
     <authors>$author$</authors>
     <owners>$author$</owners>
     <projectUrl>https://github.com/nielsmaerten/pushover-dotnet</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/nielsmaerten/pushover-dotnet/master/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <tags>pushover</tags>
